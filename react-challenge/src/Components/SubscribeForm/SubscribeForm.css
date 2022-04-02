@@ -1,0 +1,40 @@
+.subscribe-form{
+    display: flex;
+    flex-flow: row;
+    width: 50%;
+}
+.subscribe-input{
+    display: inline;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #202020;
+    opacity: 0.3;
+    padding: 24px;
+    background: #FFFFFF;
+    border: 0;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+}
+.subscribe-submit{
+    display: inline-flex;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 24px;
+    background: #FFCB47;
+    border: 0;
+    box-shadow: 10px 10px 30px rgba(255, 203, 71, 0.3);
+    cursor: pointer;
+}
+
+.subscribe-submit:hover {
+    background: #FFDC58;
+    color: #202020;
+}

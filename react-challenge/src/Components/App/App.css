@@ -1,0 +1,19 @@
+main{
+    margin: 0 auto;
+}
+
+.container{
+    margin: 0 auto;
+}
+
+.vector-bg {
+    position: absolute;
+    width: 787px;
+    height: 1183px;
+    left: 718px;
+    top: -208px;
+    background-image: url('../../images/hero-bg-vector.png');
+    background-repeat: no-repeat;
+    transform: rotate(-26.54deg);
+    z-index: -1;
+}

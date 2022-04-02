@@ -1,0 +1,17 @@
+html, body {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    width: 360px;
+    background-image: url('./images/image1.png');
+    background-position: 0;
+    background-repeat: repeat;
+}
+
+@media (min-width: 361px) {
+    body {
+        width: 100%;
+    }
+}
