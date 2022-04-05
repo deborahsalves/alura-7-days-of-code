@@ -22,35 +22,13 @@ Lista de compras:
 
 const day5 = () => {
     let addItem = true;
-    const groceryList = {
-        bebidas: [],
-        hortifruti: [],
-        secos: [],
-        higiene: [],
-        uncategorized: []
-    }
+    const groceryList = {}
 
     addItem = prompt("Deseja adicionar uma comida na sua lista de compras? S/N").toLowerCase();
     do {
         const whichItem = addItem ? prompt("Qual comida você deseja inserir?") : alert("Estamos gerando sua lista!");
-        const itemCategory = prompt("Em qual categoria a comida se encaixe? 1 - Bebidas; 2 - Hortifruti; 3 - Secos; 4 - Higiene;").toLowerCase();
-        switch(itemCategory) {
-            case '1':
-                groceryList['bebidas'].push(whichItem);
-                break;
-            case '2':
-                groceryList['hortifruti'].push(whichItem);
-                break;
-            case '3':
-                console.log('secos')
-                groceryList['secos'].push(whichItem);
-                break;
-            case '4':
-                groceryList['higiene'].push(whichItem);
-                break;
-            default:
-                groceryList['uncategorized'].push(whichItem);
-        }
+        const itemCategory = prompt("Em qual categoria a comida se encaixe?").toLowerCase();
+        Object.keys(groceryList).includes(itemCategory) ? groceryList[`${itemCategory}`].push(whichItem) : groceryList[`${itemCategory}`] = [whichItem];
         addItem = prompt("Deseja adicionar uma comida na sua lista de compras? S/N").toLowerCase();
         addItem = addItem === 's' ? true : false;
     }
